@@ -21,10 +21,12 @@ $censored = str_replace($badWord, '***', $text)
             <div class="col-12">
                 <h2>Testo censurato</h2>
                 <p><?php echo $censored?></p>
+                <p>il testo è lungo <?php echo strlen($censored)?> caratteri</p>
             </div>
             <div class="col-12 mb-5">
                 <h2>Testo non censurato</h2>
                 <p><?php echo $text?></p>
+                <p>il testo è lungo <?php echo strlen($text)?> caratteri</p>
             </div>
         </div>
     </div>
